@@ -19,6 +19,6 @@ require (
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/tjfoc/gmsm v1.3.2 // indirect
 	github.com/wechatpay-apiv3/wechatpay-go v0.2.18 // indirect
-	golang.org/x/net v0.11.0 // indirect
+	golang.org/x/net v0.17.0 // indirect
 	gopkg.in/ini.v1 v1.56.0 // indirect
 )
