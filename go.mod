@@ -1,4 +1,4 @@
-module lm1996-mojor/third_party_tool_library
+module third_party_tool_library
 
 go 1.19
 
