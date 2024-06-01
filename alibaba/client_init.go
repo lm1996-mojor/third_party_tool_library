@@ -17,7 +17,7 @@ import (
  * @return Client 访问客户端
  * @throws Exception 返回异常信息
  */
-func CreateClient(accessKeyId *string, accessKeySecret *string) (_result *dysmsapi20170525.Client, _err error) {
+func CreateClient(accessKeyId *string, accessKeySecret *string) (client *dysmsapi20170525.Client, _err error) {
 	config := &openapi.Config{
 		// 必填，您的 AccessKey ID
 		AccessKeyId: accessKeyId,
@@ -26,7 +26,7 @@ func CreateClient(accessKeyId *string, accessKeySecret *string) (_result *dysmsa
 	}
 	// Endpoint 请参考 https://api.aliyun.com/product/Dysmsapi
 	config.Endpoint = tea.String("dysmsapi.aliyuncs.com")
-	_result = &dysmsapi20170525.Client{}
-	_result, _err = dysmsapi20170525.NewClient(config)
-	return _result, _err
+	client = &dysmsapi20170525.Client{}
+	client, _err = dysmsapi20170525.NewClient(config)
+	return client, _err
 }
