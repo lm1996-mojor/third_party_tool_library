@@ -4,8 +4,8 @@ import (
 	"errors"
 	"strings"
 
-	"third_party_tool_library"
-	"third_party_tool_library/alibaba"
+	"lm1996-mojor/third_party_tool_library"
+	"lm1996-mojor/third_party_tool_library/alibaba"
 
 	dysmsapi20170525 "github.com/alibabacloud-go/dysmsapi-20170525/v3/client"
 	"github.com/alibabacloud-go/tea/tea"
